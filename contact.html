@@ -6,36 +6,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact | BotsAvia Consulting</title>
 
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
 
     <body>
 
-        <header class="navbar">
+        <nav class="navbar">
+            <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center">
 
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="BotsAvia Consulting">
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active-link">Contact</a>
             </div>
 
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-
-            <a href="contact.html" class="nav-btn">
+            <a href="contact.html" class="btn-primary px-7 py-3.5 rounded-2xl flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
                 Contact Us
             </a>
 
-            </header>
+            <button id="mobile-menu-btn" class="md:hidden text-3xl text-neutral-700">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            </div>
+            </div>
+            </nav>
+
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="flex flex-col gap-6 text-lg font-medium">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
     
 
         <section class="page-hero">
 
-            <div class="page-hero-left">
+            <div class="max-w-7xl mx-auto px-6">
 
-                <span class="section-line"></span>
-            
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <div>
+                        <span class="page-label">CONTACT US</span>
 
             <h1>Let's build Safer, <br> 
             Smarter Aviation. <br> 
@@ -45,30 +67,26 @@
             <p>Connect with our aviation consultancy team for professional support and advisory services.</p>
             </div>
 
-            <div class="page-hero-right">
-                <img src="images/contact-plane.jpg">
+            <div>
+                <img src="images/contact-plane.jpg" alt="Aircraft" class="hero-image"> 
+            </div>
+
+            </div>
+
             </div>
 
             </section>
 
-        <section class="contact-section">
+        <section class="contact-section-main">
 
-            <div class="section-heading">
+            <div class="max-w-7xl mx-auto px-6">
 
-            <span class="mini-title">GET IN TOUCH</span>
+                <div class="grid md:grid-cols-2 gap-10">
 
-            <h2>We're Ready To Assist You</h2>
+                    <div class="contact-info-wrapper">
 
-            </div>
-
-            <div class="contact-grid">
-
-                <div class="contact-info">
-
-                <div class="contact-card">
-
-                    <img src="icons/phone-call.png">
-
+                <div class="contact-card-box">
+                    <img src="icons/phone-call.png" alt="Phone">
                     <div>
                 <h3>Phone</h3>
                      <p>+267 76114 379</p>
@@ -76,20 +94,16 @@
 
                      </div>
 
-                     <div class="contact-card">
-
-                        <img src="icons/email.png">
-
+                     <div class="contact-card-box">
+                        <img src="icons/email.png" alt="Email">
                         <div>
                      <h3>Email</h3>
                      <p>info@botsavia.com</p>
                      </div>
                     </div>
 
-                    <div class="contact-card">
-
-                        <img src="icons/whatsapp.png">
-
+                    <div class="contact-card-box">
+                        <img src="icons/whatsapp.png" alt="Whatsapp">
                     <div>
                     <h3>Whatsapp</h3>
                     <p>+267 76 114 379</p>
@@ -97,9 +111,7 @@
                     </div>
 
                     <div class="contact-card">
-
-                        <img src="icons/location.png">
-
+                        <img src="icons/location.png" alt="Location">
                         <div>
                             <h3>Office</h3>
                             <p>Gaborone, Botswana</p>
@@ -109,37 +121,36 @@
 
                     </div>
 
-                    <form class="contact-form">
-
-                        <div class="form-row">
+                    <form class="contact-form-box">
 
                         <input type="text" placeholder="Full Name">
 
                         <input type="email" placeholder="Email Address">
 
-                        </div>
-
                         <input type="text" placeholder="Phone Number">
 
                         <textarea placeholder="Your Message"></textarea>
 
-                        <button type="submit">
-                            Send Message
+                        <button type="submit" class="btn-primary submit-btn">
+                            Send Inquiry
                         </button>
 
                         </form>
-                        
+
+                    </div>
+
                     </div>
 
         </section>
 
          <footer class="footer">
 
+            <div class="max-w-7xl mx-auto px-6">
+
             <div class="footer-grid">
 
                 <div>
-
-                    <img src="images/logo.png" class="footer-logo">
+                    <img src="images/logo.png" alt="Logo" class="footer-logo">
 
                     <p>
                         Strategic guidance. <br>
@@ -160,12 +171,12 @@
 
                     <div>
 
-                        <h4>Our Services</h4>
+                        <h4>Services</h4>
 
-                        <p>Safety & Compliance</p>
-                        <p>Operations Consulting</p>
-                        <p>Regulatory Support</p>
-                        <p>Aviation Training</p>
+                        <a href="#">Safety & Compliance</a>
+                        <a href="#">Operations Consulting</p>
+                        <a href="#">Regulatory Guidance</a>
+                        <a href="#">Training & Advisory</a>
                     </div>
 
                     <div>
@@ -173,18 +184,25 @@
                         <h4>Contact Us</h4>
 
                         <div class="footer-contact-item">
-                            <img src="icons/phone-call.png" alt="">
+                            <img src="icons/phone-call.png" alt="Phone">
                         <p>+267 76 114 379</p>
                     </div>
 
                     <div class="footer-contact-item">
-                        <img src="icons/email.png">
+                        <img src="icons/email.png" alt="Email">
                         <p>info@botsavia.com</p>
                     </div>
 
                     <div class="footer-contact-item">
-                        <img src="icons/location.png">
+                        <img src="icons/whatsapp.png" alt="Whatsapp">
+                        <p>+267 76 114 379</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <img src="icons/location.png" alt="Location">
                         <p>Gaborone, Botswana</p>
+                    </div>
+
                     </div>
 
                     </div>
@@ -193,7 +211,23 @@
             &copy; 2026 BotsAvia Consulting | All Rights Reserved
             </div>
 
+            </div>
+
         </footer>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+
+                const icon = mobileBtn.querySelector('i');
+
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        </script>
 
 
     </body>

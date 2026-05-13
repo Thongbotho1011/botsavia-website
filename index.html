@@ -1,151 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BotsAvia Consulting</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>BotsAvia Consulting | Aviation Excellence</title>
 
-        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
-
     <body>
 
-        <header class="navbar">
+        <nav class="navbar py-5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="BotsAvia Consulting Logo">
+                    </a>
+    
 
-            <div class="logo">
-                <img src="images/logo.png" alt="BotsAvia Consulting">
+                <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                    <a href="index.html" class="nav-link active-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <a href="contact.html" class="btn-primary px-7 py-3.5 rounded-2xl flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Contact Us
+                </a>
+
+                <button id="mobile-menu-btn" class="md:hidden text-3xl text-neutral-700">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
             </div>
-
-
-
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+        </div>
         </nav>
 
-        <a href="contact.html" class="nav-btn">
-            Contact Us
-        </a>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="flex flex-col gap-6 text-lg font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
 
-    </header>
+        <header class="hero-section">
+            <div class="max-w-7xl mx-auto px-6">
 
-        <section class="hero">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
 
-            <div class="hero-left">
+                    <div>
 
-                <span class="section-line"></span>
+                <div class="hero-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Premium Aviation Consultancy
+                </div>
 
                 <h1>
-                    Strategic Aviation  <br>
-                    Solutions. <br>
-                    <span>Safer. Smarter.</span>
+                    Empowering Aviation<br>
+                    Through Expertise
                 </h1>
 
                 <p>
-                    Premium aviation consultancy services focused on safety, compliance and operational excellence across international aviation standards.
+                    Strategic guidance, regulatory excellence and operational optimization for forward-thinking aviation organizations.
                 </p>
 
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn-primary hero-btn">
+                        Explore Our Services
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="btn-outline hero-btn">
+                        Get In Touch
+                    </a>
+                    </div>
                 </div>
-
-                <div class="hero-right">
-                    <img src="images/hero.jpg" alt="Aircraft">
-                </div>
-
-        <section class="highlights">
-
-            <div class="highlight-item">
-                <img src="icons/safety.png">
 
                 <div>
-                <h3>Safety & Compliance</h3>
-                <p>Ensuring aviation operations meet global safety standards.</p>
-            </div>
-            </div>
+                    <img src="images/hero.jpg" 
+                    alt="Aviation Excellence"
+                    class="hero-image">
+                </div>
 
-            <div class="highlight-item">
-            <img src="icons/regulatory.png">
+                </div>
 
-            <div>
-                <h3>Regulatory Guidance</h3>
-                <p>Expert navigation through aviation regulatory systems.</p>
             </div>
-            </div>
+        </header>
 
-            <div class="highlight-item">
-            <img src="icons/operations.png">
+        <section class="highlights-section">
 
-            <div>
-                <h3>Operational Efficiency</h3>
-                <p>Optimizing processes for better performance.</p>
-            </div>
-            </div>
+            <div class="max-w-7xl mx-auto px-6">
 
-            <div class="highlight-item">
-            <img src="icons/Expertise.png">
+                <div class="grid md:grid-cols-4 gap-10">
 
-            <div>
-                <h3>Proven Expertise</h3>
-                <p>Experienced consultants delivering measurable results.</p>
-            </div>
-            </div>
+                    <a href="services.html" class="highlight-card">
+                        <img src="icons/safety.png" alt="Safety & Compliance">
+                        <h3>Safety & Compliance</h3>
+                        <p>Ensuring aviation operations align with global safety standards.</p>
+                    </a>
+                
+                <a href="services.html" class="highlight-card">
+                    <img src="icons/regulatory.png" alt="Regulatory Assistance">
+                    <h3>Regulatory Assistance</h3>
+                    <p>Professional support navigating aviation regulations and approvals.</p>
+                </a>
 
+                <a href="services.html" class="highlight-card">
+                    <img src="icons/operations.png" alt="Operational Excellence">
+                    <h3>Operational Excellence</h3>
+                    <p>Optimizing workflows and operational performance across aviation sectors.</p>
+                </a>
+
+                <a href="services.html" class="highlight-card">
+                    <img src="icons/docs.png" alt="Expert Documentation">
+                    <h3>Aviation Documentation</h3>
+                    <p>Professional preparation of manuals, procedures, and compliance documentation.</p>
+                </a>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section class="inquiry-section">
 
-            <div class="inquiry-left">
+        <section class="cta-section">
 
-                <span class="mini-title">QUICK INQUIRY</span>
+            <div class="max-w-2xl mx-auto px-6">
 
-                <h2>
-                    Ready To Enhance Your Aviation Operations?
-                </h2>
+                <div class="cta-box">
 
-                <p>
-                    Speak with BotsAvia Consulting regarding operational support, aviation compliance, safety systems and consultancy services.
-                </p>
+                    <div>
+                <h2>Ready to Take Your Aviation Operations to New Heights?</h2>
+                <p>Partner with BotsAvia Consulting for premium aviation advisory services.</p>
+                </div>
+
+                <a href="contact.html" class="btn-primary cta-btn">
+                    Start a Conversation
+                </a>
+
             </div>
 
-            <form class="inquiry-form">
-
-                <input type="text" placeholder="Full Name">
-
-                <input type="email" placeholder="Email Address">
-
-                <input type="text" placeholder="Phone Number">
-
-
-                <textarea placeholder="Your Inquiry"></textarea>
-
-                <button type="submit">
-                    Submit Inquiry
-                </button>
-
-            </form>
+            </div>
 
         </section>
 
         <footer class="footer">
 
-            <div class="footer-grid">
+            <div class="max-w-7xl mx-auto px-6">
 
-                <div>
+                <div class="footer-grid">
 
-                    <img src="images/logo.png" class="footer-logo">
+                    <div>
+                        <img src="images/logo.png" alt="Logo" class="footer-logo">
 
-                    <p>
+                        <p>
                         Strategic guidance. <br>
                         Stronger opertaions. <br>
                         Sustainable growth.
-                    </p>
-
+                        </p>
+                        
                     </div>
 
                     <div>
-
                         <h4>Quick Links</h4>
 
                         <a href="index.html">Home</a>
@@ -154,41 +176,65 @@
                     </div>
 
                     <div>
-
-                        <h4>Our Services</h4>
-
-                        <p>Safety & Compliance</p>
-                        <p>Operations Consulting</p>
-                        <p>Regulatory Support</p>
-                        <p>Aviation Training</p>
+                        <h4>Services</h4>
+                        <a href="#">Safety & Compliance</a>
+                        <a href="#">Operational Consulting</a>
+                        <a href="#">Regulatory Guidance</a>
+                        <a href="#">Training & Advisory</a>
                     </div>
 
                     <div>
-
-                        <h4>Contact Us</h4>
+                        <h4>Contact</h4>
 
                         <div class="footer-contact-item">
-                            <img src="icons/phone-call.png" alt="">
-                        <p>+267 76 114 379</p>
-                    </div>
+                            <img src="icons/phone-call.png" alt="Phone">
+                            <p>+267 76 114 379</p>
+                        </div>
 
-                    <div class="footer-contact-item">
-                        <img src="icons/email.png">
-                        <p>info@botsavia.com</p>
-                    </div>
+                        <div class="footer-contact-item">
+                            <img src="icons/email.png" alt="Email">
+                            <p>info@botsavia.com</p>
+                        </div>
 
-                    <div class="footer-contact-item">
-                        <img src="icons/location.png">
-                        <p>Gaborone, Botswana</p>
+                        <div class="footer-contact-item">
+                            <img src="icons/whatsapp.png" alt="Whatsapp">
+                            <p>+267 76 114 379</p>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <img src="icons/location.png" alt="Location">
+                            <p>Gaborone, Botswana</p>
+                        </div>
                     </div>
 
                     </div>
 
                     <div class="footer-bottom">
-            &copy; 2026 BotsAvia Consulting | All Rights Reserved
-            </div>
+                        &copy; 2026 BotsAvia Consulting | All Rights Reserved
+                    </div>
 
-        </footer>
+                    </div>
+                    
+
+                </footer>
+
+                    
+        <script>
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+
+                const icon = mobileBtn.querySelector('i');
+
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        </script>
+
+
+
 
 
     </body>
