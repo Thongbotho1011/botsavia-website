@@ -299,7 +299,7 @@ section{
 
 .page-hero{
     position: relative;
-    min-height: 72vh;
+    min-height: 88vh;
     display: flex;
     align-items: hidden;
     padding: 140px 0 90px;
@@ -336,7 +336,7 @@ section{
 }
 
 .page-hero-content{
-    max-width: 760px;
+    max-width: 620px;
 }
 
 .page-hero-content span{
