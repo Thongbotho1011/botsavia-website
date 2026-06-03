@@ -4,142 +4,100 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact | BotsAvia Consulting</title>
+        <title>BotsAvia | Contact</title>
 
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
     </head>
-
     <body>
 
-        <nav class="navbar">
-            <div class="container nav-wrapper">
-
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="BotsAvia Consulting">
-            </a>
-
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html" class="active">Contact</a>
-            </div>
-
-            <a href="#contact-form" class="nav-btn">Quick Inquiry
-            </a>
-
-            <button class="menu-btn" id="mobile-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            </div>
-            </nav>
-
-            <div id="mobile-menu" class="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+        <header class="header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="BotsAvia Consulting Logo" class="logo-img">
+                    </a>
     
 
-        <header class="page-hero">
+                <nav class="nav" id="main-nav">
+                    <a href="index.html" class="nav-link active">Overview</a>
+                    <a href="expertise.html" class="nav-link">Expertise</a>
+                    <a href="expertise.html#training" class="nav-link">Training</a>
+                    <a href="contact.html#careers" class="nav-link">Careers</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
 
-            <img src="images/contact-plane.jpg" alt="Contact BotsAvia" class="page-hero-bg">
+               <a href="contact.html" class="btn-primary">
+                Schedule A Consultation
+               </a>
 
-            <div class="page-hero-overlay"></div>
-
-            <div class="container page-hero-wrapper">
-
-                <div class="page-hero-content">
-
-                        <span>CONTACT US</span>
-
-            <h1>Let's build Safer, <br> 
-            Smarter Aviation. <br> 
-        </h1>
-
-            <p>Connect with our aviation consultancy team for professional support and advisory services.</p>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
 
             </div>
-
             </div>
-
-
             </header>
+    
 
-        <section class="contact-section" id="contact-form">
+        <section class="hero">
+            <div class="hero-bg">
+            <img src="images/contact-plane.jpg" alt="Contact BotsAvia">
+            </div>
 
-                <div class="container contact-grid">
 
-                    <div class="contact-info">
+            <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
 
-                        <span>GET IN TOUCH</span>
-                        
-                        <h2>
-                            Professional Aviation Consultancy Support
-                        </h2>
+            <h1>Let's Start<br>The Conversation</h1>
+            <p class="hero-subtitle">We'd love to hear from you! Our team is ready to support your aviation goals.</p>
+            </div>
 
-                        <p>
-                            Our team is available to assist with aviation operations, compliance support, documentation, and stratgeic consultancy. 
-                        </p>
+            </div>
+            </div>
+            </section>
 
-                <div class="contact-cards">
+        <section class="contact-section">
+                <div class="container">
 
-                    <div class="contact-card">
-                    <img src="icons/phone-call.png" alt="Phone">
-                    <div>
-                <h4>Phone</h4>
-                     <p>+267 76114 379</p>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                        <h3>CONTACT US</h3>
+
+                    <div class="info-item">
+                    <img src="icons/phone-call.png" alt="Phone" class="info-icon">
+                    <div><strong>Phone</strong><br>+267 76 114 379</div>
                      </div>
 
-                     </div>
-
-                     <div class="contact-card">
-                        <img src="icons/email.png" alt="Email">
-                        <div>
-                     <h4>Email</h4>
-                     <p>info@botsavia.com</p>
-                     </div>
+                     <div class="info-item">
+                        <img src="icons/email.png" alt="Email" class="info-icon">
+                        <div><strong>Email</strong><br>info@botsavia.com</div>
                     </div>
 
-                    <div class="contact-card">
-                        <img src="icons/whatsapp.png" alt="Whatsapp">
-                    <div>
-                    <h4>Whatsapp</h4>
-                    <p>Chat With Our Team</p>
+                    <div class="info-item">
+                        <img src="icons/internet.png" alt="Website" class="info-icon">
+                    <div><strong>Website</strong><br>www.botsavia.co.bw</div>
                     </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <img src="icons/location.png" alt="Location">
-                        <div>
-                            <h4>Office</h4>
-                            <p>Gaborone, Botswana</p>
-                        </div>
+                    
+                    <div class="info-item">
+                        <img src="icons/location.png" alt="Location" class="info-icon">
+                        <div><strong>Address</strong><br>Gaborone, Botswana</div>
                     </div>
 
                     </div>
 
-                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send Us A Message</h3>
+                        <form action="#" method="POST">
 
-                    <div class="contact-form-box">
+                        <div class="form-row"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-row"><input type="email" placeholder="Email Address" required></div>
+                        <div class="form-row"><input type="text" placeholder="Organization"></div>
+                        <div class="form-row"><textarea placeholder="Your Message" rows="6" required></textarea></div>
 
-                        <div class="form-header">
-                            <span>CONTACT FORM</span>
-                            <h3>Submit Your Inquiry</h3>
-                            </div>
-
-                            <form class="contact-form">
-                        <input type="text" placeholder="Full Name">
-
-                        <input type="email" placeholder="Email Address">
-
-                        <input type="tel" placeholder="Phone Number">
-
-                        <textarea placeholder="Your Message"></textarea>
-
-                        <button type="submit">
-                            Submit
+                        <button type="submit" class="btn-primary">
+                            SEND MESSAGE
                         </button>
 
                         </form>
@@ -147,96 +105,100 @@
                     </div>
 
                     </div>
+                    </div>
 
         </section>
 
-         <footer class="footer">
+        <section class="careers" id="careers">
+            <div class="container">
+                <div class="careers-content">
+                    <div class="careers-text">
+                        <h2>Join The BotsAvia Network</h2>
+                        <p>We are always looking for talented, driven and value-aligned professionals who are passionate about advancing aviaion in Africa and beyond.</p>
+                        <a href="#" class="btn-secondary">RECRUITMENT</a>
+                    </div>
+                    <div class="careers-image">
+                        <img src="images/careers.jpg" alt="Join our team">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="container footer-grid">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
 
                     <div>
-                        <img src="images/logo.png" alt="Logo" class="footer-logo">
-
-                        <p class="footer-description">
-                        Strategic guidance.<br>
-                        Stronger operations.<br>
-                        Sustainable growth.
-                        </p>
-
+                        <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Logo" class="logo-img">
+                        </a>
+                        <p class="footer-desc">Strategic aviation advisory solutions built on insight, integrity and a commitment to excellence.</p>
                     </div>
 
                     <div>
-                        <h4>Quick Links</h4>
-
-                        <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="services.html">Services</a>
+                        <h4>QUICK LINKS</h4>
+                        <a href="index.html">Overview</a>
+                        <a href="expertise.html">Expertise</a>
+                        <a href="expertise.html#training">Training</a>
+                        <a href="contact.html#careers">Careers</a>
                         <a href="contact.html">Contact</a>
                     </div>
+                    
+                    <div>
+                        <h4>EXPERTISE AREAS</h4>
+                        <a href="expertise.html">Airline Advisory</a>
+                        <a href="expertise.html">Airport Advisory</a>
+                        <a href="expertise.html">Regulatory Compliance</a>
+                        <a href="expertise.html">Safety Management</a>
+                        <a href="expertise.html#training">Aviation Training</a>
+                        <a href="expertise.html">Business Aviation</a>
                     </div>
 
                     <div>
-                        <h4>Contact</h4>
-
-                        <div class="footer-contact">
-
-                           <p>
-                            <img src="icons/phone-call.png" alt="Phone" class="footer-icon">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item">
+                            <img src="icons/phone-call.png" alt="" class="footer-icon">
                             +267 76 114 379
-                        </p>
+                        </div>
                         
-
-                        
-                           <p>
-                            <img src="icons/email.png" alt="Email" class="footer-icon">
-                            info@botsavia.com
-                        </p>
-                        
-
-                        
-                            <p>
-                                <img src="icons/whatsapp.png" alt="Whatsapp" class="footer-icon">
-                            +267 76 114 379
-                        </p>
-                        
-
-                    
-                            <p>
-                                <img src="icons/location.png" alt="Location" class="footer-icon">
+                           <div class="contact-item">
+                            <img src="icons/email.png" alt="" class="footer-icon">
+                            info@botsavia.co.bw
+                           </div>
+                
+                            <div class="contact-item">
+                                <img src="icons/location.png" alt="" class="footer-icon">
                             Gaborone, Botswana
-                        </p>
+                            </div>
 
                         </div>
 
                     </div>
 
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><img src="icons/facebook.png" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="icons/instagram.png" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
                     </div>
 
                     <div class="footer-bottom">
-                        &copy; 2026 BotsAvia Consulting | All Rights Reserved
+                       <p>&copy; 2026 BotsAvia Consulting | All Rights Reserved</p>
                     </div>
-                    
-
+                    </div>
                 </footer>
 
                     
         <script>
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('main-nav');
 
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
-            });
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                hamburger.classList.toggle('active');
 
-            window.addEventListener('scroll', () => {
-                const navbar = document.querySelector('.navbar');
-
-                navbar.classList.toggle('scrolled', window.scrollY > 30);
             });
 
         </script>
 
-
-
     </body>
-    </html>
+</html>
