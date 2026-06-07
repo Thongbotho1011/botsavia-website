@@ -32,6 +32,8 @@ h1, h2, h3, h4 {
     z-index: 1000;
     transition: all 0.3s ease;
     box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    padding: 0;
+    min-height: auto;
 }
 
 .header.scrolled {
@@ -48,7 +50,7 @@ h1, h2, h3, h4 {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.25rem 0;
+    padding: 0.2rem 0;
     min-height: 50px;
 }   
 
