@@ -2,147 +2,142 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BotsAvia | Aviation Advisory</title>
+        <meta name="description" content="Botswana's first dedicated aviation consultancy providing advisory, compliance, training and operational support across the aviation ecosystem.">
 
-            <link rel="stylesheet" href="style.css">
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        </head>
     <body>
 
-        <header class="header">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="BotsAvia Consulting Logo" class="logo-img">
+        <header class="site-header">
+            <div class="container nav-wrap">
+                <a class="brand" href="index.html" aria-label="BotsAvia Consulting home">
+                        <img src="images/logo.png" alt="BotsAvia Consulting Logo">
+                        <span class="brand-name">BotsAvia</span>
                     </a>
+
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+                    <label for="nav-toogle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
     
 
-                <nav class="nav" id="main-nav">
-                    <a href="index.html" class="nav-link">Overview</a>
-                    <a href="expertise.html" class="nav-link">Expertise</a>
-                    <a href="expertise.html#training" class="nav-link">Training</a>
-                    <a href="contact.html#careers" class="nav-link">Careers</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </nav>
+                <ul class="nav-links">
+                   <li><a href="index.html" aria-current="page">Overview</a></li>
+                   <li><a href="expertise.html">Expertise</a></li>
+                   <li><a href="careers.html">Careers</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   </ul>
+                   </div>
+                   </header>
+            
+                   <main>
 
-               <a href="contact.html" class="btn-primary">
-                Schedule A Consultation
-               </a>
-
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span><span></span><span></span>
-                </button>
-
-            </div>
-    </div>
-    </header>
-
-        <section class="hero">
-            <div class="hero-bg">
-            <img src="images/home-hero.jpg" alt="Aviation Advisory">
-            </div>
-
-
-            <div class="hero-content">
+        <section class="hero" style="--hero-img:url('images/home-hero.jpg')">
                 <div class="container">
-                <div class="hero-text">
 
                 <h1>
                  Strategic Aviation Advisory<br>For Africa's Next Era</h1>
-                <p class="hero-subtitle">Botswana's first dedicated aviation consultancy providing expert advisory, compliance, training and operational support across the aviation ecosystem.</p>
-                    <a href="expertise.html" class="btn-primary">
-                        EXPLORE
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                    </div>
-                    
+                <p class>Botswana's first dedicated aviation consultancy providing expert advisory, compliance, training and operational support across the aviation ecosystem.</p>
+                <div class="btn-row">
+                    <a class="btn btn-primary" href="expertise.html">Explore</a>
+                    <a class="btn btn-outline" href="contact.html">Contact us</a>
                 </div>
-
                 </div>
+            </section>
 
-            
-        </section>
-
-        <section class="capabilities">
+        <section class="section">
             <div class="container">
-                <h2 class="section-title">OUR CAPABILITIES</h2>
+                <div class="section-head">
+                <h2>What We Do</h2>
+                <p>Practical consultancy for the people who keep aircraft flying and airports running.</p>
+                </div>
                     
 
-                    <div class="grid-4">
+                    <div class="card-grid">
 
-                        <div class="capability-card">
-                        <img src="icons/safety.png" alt="Safety Management" class="card-icon">
+                        <article class="card">
+                        <div class="card-icon" aria-hidden="true">&#9878;</div>
                         <h3>Safety Management</h3>
                         <p>Building resilient safety systems that protect people and operations.</p>
-                        </div>
+                        </article>
 
-                        <div class="capability-card">
-                    <img src="icons/regulatory.png" alt="Regulatory Compliance" class="card-icon">
-                    <h3>Regulatory Compliance</h3>
-                    <p>Navigating complex regulations with precision and confidence.</p>
-                        </div>
+                        <article class="card">
+                        <div class="card-icon" aria-hidden="true">&#9737;</div>
+                        <h3>Regulatory Compliance</h3>
+                        <p>Navigating complex regulations with precision and confidence.</p>
+                        </article>
 
-                <div class="capability-card">
-                    <img src="icons/operations.png" alt="Operational Excellence" class="card-icon">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">&#9881;</div>
                     <h3>Operational Excellence</h3>
                     <p>Optimizing workflows and operational performance across aviation sectors.</p>
-                </div>
+                </article>
 
-                <div class="capability-card">
-                    <img src="icons/training.png" alt="Aviation Training" class="card-icon">
+                <article class="card">
+                    <div clsdd="card-icon" aria-hidden="true">&#9992;</div>
                     <h3>Aviation Training</h3>
                     <p>Developing capability through industry-relevant training and knowlegde transfer.</p>
+                </article>
                 </div>
 
+                <div class="btn-row">
+                    <a class="btn btn-blue" href="expertise.html">Explore all services</a>
                 </div>
-
             </div>
-
         </section>
 
-        <section class="why-us">
-            <div class="container">
-                <h2 class="section-title">WHY INDUSTRY LEADERS CHOOSE BOTSAVIA</h2>
-
-                <div class="grid-3">
-
-                    <div class="why-card">
-                        <h3>Deep Industry Knowledge</h3>
-                        <p>Our team brings decades of combined experience across commercial aviation, regulation, operations and strategy.</p>
-                </div>
-
-                <div class="why-card">
-                    <h3>Regional Understanding</h3>
-                    <p>We understand Africa's aviation landscape, challenges and opporunities-delivering solutions that work.</p>
-                </div>
-
-                <div class="why-card">
-                    <h3>Practical, Measurable Impact</h3>
-                    <p>We focus on outcomes that matter: safer operations, compliance confidence and sustainable growth.</p>
-                </div>
-                </div>
-                </div>
-                </section>
-
-                <section class="conversation">
+                <section class="section section-alt" id="inquiry">
                     <div class="container">
-                        <div class="conversation-grid">
-                            <div class="conversation-text">
+                        <div class="section-head center">
                                 <h2>LET'S TALK</h2>
                                 <p>Share your priorities with us and our team will be in touch to dicuss how we can support your objectives.</p>
                             </div>
 
-        <form class="conversation-form" action="#" method="POST">
+                            <div class="form-panel">
 
-            <div class="form-group"><input type="text" placeholder="Full Name" required></div>
-            <div class="form-group"><input type="text" placeholder="Organization" required></div>
-            <div class="form-group"><input type="email" placeholder="Email Address" required></div>
-            <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
-            <div class="form-group"><textarea placeholder="How can we assist your organization?" rows="4"></textarea></div>
+        <form action="mailto:info@botsavia.co.bw" method="post" enctype="text/plain">
+            <div class="form-grid">
 
-            <button type="submit" class="btn-primary">SUBMIT</button>
+            <div class="field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="Name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" autocomplete="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="Phone" autocomplete="tel">
+                        </div>
+
+                        <div class="field">
+                            <label for="service">Service</label>
+                            <select id="service" name="Service">
+                                <option value="">Select a service</option>
+                                <option>Airline advisory</option>
+                                <option>Regulartory compliance</option>
+                                <option>Safety management systems</option>
+                                <option>Aviation training</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="field field-full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" required></textarea>
+                        </div>
+
+                        <div class="form-actions"
+
+            <button class="btn btn-primary" type="submit">SEND</button>
+            </div>
 
         </form>
 
@@ -151,93 +146,55 @@
         </div>
 
         </section>
+        </main>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-grid">
-
-                    <div>
-                        <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Logo" class="logo-img">
-                        </a>
-                        <p class="footer-desc">Strategic aviation advisory solutions built on insight, integrity and a commitment to excellence.</p>
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                        <img src="images/logo.png" alt="Logo">
+                        <p>Strategic aviation advisory solutions built on insight, integrity and a commitment to excellence.</p>
                     </div>
 
                     <div>
                         <h4>QUICK LINKS</h4>
-                        <a href="index.html">Overview</a>
-                        <a href="expertise.html">Expertise</a>
-                        <a href="expertise.html#training">Training</a>
-                        <a href="contact.html#careers">Careers</a>
-                        <a href="contact.html">Contact</a>
+                        <ul class="footer-links">
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                       <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                     
                     <div>
-                        <h4>EXPERTISE AREAS</h4>
-                        <a href="expertise.html">Airline Advisory</a>
-                        <a href="expertise.html">Airport Advisory</a>
-                        <a href="expertise.html">Regulatory Compliance</a>
-                        <a href="expertise.html">Safety Management</a>
-                        <a href="expertise.html#training">Aviation Training</a>
-                        <a href="expertise.html">Business Aviation</a>
-                    </div>
-
-                    <div>
                         <h4>Contact Us</h4>
-                        <div class="contact-item">
-                            <img src="icons/phone-call.png" alt="" class="footer-icon">
-                            +267 76 114 379
-                        </div>
+                        <ul class="footer-contact">
+                           <li><img src="icons/phone-call.png" alt="">
+                            +267 76 114 379</li>
+                    
+                            <li><img src="icons/email.png" alt="">
+                            info@botsavia.co.bw</li>
                         
-                           <div class="contact-item">
-                            <img src="icons/email.png" alt="" class="footer-icon">
-                            info@botsavia.co.bw
-                           </div>
                 
-                            <div class="contact-item">
-                                <img src="icons/location.png" alt="" class="footer-icon">
-                            Gaborone, Botswana
-                            </div>
+                                <li><img src="icons/location.png" alt="">
+                            Gaborone, Botswana</li>
+                            </ul>
+                        
 
-                        </div>
-
+                    <ul class="social">
+                        <li><a href="#" class="social-icon"><img src="icons/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#" class="social-icon"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#" class="social-icon"><img src="icons/whatsapp.png" alt="WhatsApp"></a></li>
+                        </ul>
                     </div>
-
-                    <div class="social-media">
-                        <a href="#" class="social-icon"><img src="icons/facebook.png" alt="Facebook"></a>
-                        <a href="#" class="social-icon"><img src="icons/instagram.png" alt="Instagram"></a>
-                        <a href="#" class="social-icon"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
-                    </div>
+            
 
                     <div class="footer-bottom">
+                        <div class="container">
                        <p>&copy; 2026 BotsAvia Consulting | All Rights Reserved</p>
                     </div>
                     </div>
                 </footer>
 
-                    
-        <script>
-            const header = document.querySelector('.header');
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 30) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-
-
-            const hamburger = document.getElementById('hamburger');
-            const nav = document.getElementById('main-nav');
-
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('active');
-                hamburger.classList.toggle('active');
-
-            });
-
-        </script>
 
     </body>
 </html>
